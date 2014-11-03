@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304DB07E1A07C17C0046CDA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DB07D1A07C17C0046CDA9 /* AppDelegate.m */; };
+		304DB0801A07C17C0046CDA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DB07F1A07C17C0046CDA9 /* main.m */; };
+		304DB0831A07C17C0046CDA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DB0821A07C17C0046CDA9 /* ViewController.m */; };
+		304DB0851A07C17C0046CDA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304DB0841A07C17C0046CDA9 /* Images.xcassets */; };
+		304DB0881A07C17C0046CDA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304DB0861A07C17C0046CDA9 /* Main.storyboard */; };
+		304DB0941A07C17C0046CDA9 /* SubOhmCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DB0931A07C17C0046CDA9 /* SubOhmCalcTests.m */; };
+		304DB09F1A07C27C0046CDA9 /* OhmCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DB09E1A07C27C0046CDA9 /* OhmCalcViewController.m */; };
+		304DB0A11A07C4B50046CDA9 /* VT_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 304DB0A01A07C4B50046CDA9 /* VT_256.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		304DB08E1A07C17C0046CDA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 304DB06F1A07C17C0046CDA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304DB0761A07C17C0046CDA9;
+			remoteInfo = SubOhmCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		304DB0771A07C17C0046CDA9 /* SubOhmCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubOhmCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304DB07B1A07C17C0046CDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304DB07C1A07C17C0046CDA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		304DB07D1A07C17C0046CDA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		304DB07F1A07C17C0046CDA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		304DB0811A07C17C0046CDA9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		304DB0821A07C17C0046CDA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		304DB0841A07C17C0046CDA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		304DB0871A07C17C0046CDA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		304DB08D1A07C17C0046CDA9 /* SubOhmCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubOhmCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304DB0921A07C17C0046CDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304DB0931A07C17C0046CDA9 /* SubOhmCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubOhmCalcTests.m; sourceTree = "<group>"; };
+		304DB09D1A07C27C0046CDA9 /* OhmCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhmCalcViewController.h; sourceTree = "<group>"; };
+		304DB09E1A07C27C0046CDA9 /* OhmCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OhmCalcViewController.m; sourceTree = "<group>"; };
+		304DB0A01A07C4B50046CDA9 /* VT_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VT_256.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304DB0741A07C17C0046CDA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304DB08A1A07C17C0046CDA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304DB06E1A07C17C0046CDA9 = {
+			isa = PBXGroup;
+			children = (
+				304DB0791A07C17C0046CDA9 /* SubOhmCalc */,
+				304DB0901A07C17C0046CDA9 /* SubOhmCalcTests */,
+				304DB0781A07C17C0046CDA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304DB0781A07C17C0046CDA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304DB0771A07C17C0046CDA9 /* SubOhmCalc.app */,
+				304DB08D1A07C17C0046CDA9 /* SubOhmCalcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304DB0791A07C17C0046CDA9 /* SubOhmCalc */ = {
+			isa = PBXGroup;
+			children = (
+				304DB09D1A07C27C0046CDA9 /* OhmCalcViewController.h */,
+				304DB09E1A07C27C0046CDA9 /* OhmCalcViewController.m */,
+				304DB07C1A07C17C0046CDA9 /* AppDelegate.h */,
+				304DB07D1A07C17C0046CDA9 /* AppDelegate.m */,
+				304DB0811A07C17C0046CDA9 /* ViewController.h */,
+				304DB0821A07C17C0046CDA9 /* ViewController.m */,
+				304DB0841A07C17C0046CDA9 /* Images.xcassets */,
+				304DB0861A07C17C0046CDA9 /* Main.storyboard */,
+				304DB0A01A07C4B50046CDA9 /* VT_256.png */,
+				304DB07A1A07C17C0046CDA9 /* Supporting Files */,
+			);
+			path = SubOhmCalc;
+			sourceTree = "<group>";
+		};
+		304DB07A1A07C17C0046CDA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304DB07B1A07C17C0046CDA9 /* Info.plist */,
+				304DB07F1A07C17C0046CDA9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		304DB0901A07C17C0046CDA9 /* SubOhmCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				304DB0931A07C17C0046CDA9 /* SubOhmCalcTests.m */,
+				304DB0911A07C17C0046CDA9 /* Supporting Files */,
+			);
+			path = SubOhmCalcTests;
+			sourceTree = "<group>";
+		};
+		304DB0911A07C17C0046CDA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304DB0921A07C17C0046CDA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304DB0761A07C17C0046CDA9 /* SubOhmCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304DB0971A07C17C0046CDA9 /* Build configuration list for PBXNativeTarget "SubOhmCalc" */;
+			buildPhases = (
+				304DB0731A07C17C0046CDA9 /* Sources */,
+				304DB0741A07C17C0046CDA9 /* Frameworks */,
+				304DB0751A07C17C0046CDA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubOhmCalc;
+			productName = SubOhmCalc;
+			productReference = 304DB0771A07C17C0046CDA9 /* SubOhmCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		304DB08C1A07C17C0046CDA9 /* SubOhmCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304DB09A1A07C17C0046CDA9 /* Build configuration list for PBXNativeTarget "SubOhmCalcTests" */;
+			buildPhases = (
+				304DB0891A07C17C0046CDA9 /* Sources */,
+				304DB08A1A07C17C0046CDA9 /* Frameworks */,
+				304DB08B1A07C17C0046CDA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304DB08F1A07C17C0046CDA9 /* PBXTargetDependency */,
+			);
+			name = SubOhmCalcTests;
+			productName = SubOhmCalcTests;
+			productReference = 304DB08D1A07C17C0046CDA9 /* SubOhmCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304DB06F1A07C17C0046CDA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Johannes Dürr";
+				TargetAttributes = {
+					304DB0761A07C17C0046CDA9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					304DB08C1A07C17C0046CDA9 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 304DB0761A07C17C0046CDA9;
+					};
+				};
+			};
+			buildConfigurationList = 304DB0721A07C17C0046CDA9 /* Build configuration list for PBXProject "SubOhmCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304DB06E1A07C17C0046CDA9;
+			productRefGroup = 304DB0781A07C17C0046CDA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304DB0761A07C17C0046CDA9 /* SubOhmCalc */,
+				304DB08C1A07C17C0046CDA9 /* SubOhmCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304DB0751A07C17C0046CDA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DB0851A07C17C0046CDA9 /* Images.xcassets in Resources */,
+				304DB0A11A07C4B50046CDA9 /* VT_256.png in Resources */,
+				304DB0881A07C17C0046CDA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304DB08B1A07C17C0046CDA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304DB0731A07C17C0046CDA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DB09F1A07C27C0046CDA9 /* OhmCalcViewController.m in Sources */,
+				304DB0831A07C17C0046CDA9 /* ViewController.m in Sources */,
+				304DB0801A07C17C0046CDA9 /* main.m in Sources */,
+				304DB07E1A07C17C0046CDA9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304DB0891A07C17C0046CDA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304DB0941A07C17C0046CDA9 /* SubOhmCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		304DB08F1A07C17C0046CDA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304DB0761A07C17C0046CDA9 /* SubOhmCalc */;
+			targetProxy = 304DB08E1A07C17C0046CDA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		304DB0861A07C17C0046CDA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304DB0871A07C17C0046CDA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304DB0951A07C17C0046CDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		304DB0961A07C17C0046CDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		304DB0981A07C17C0046CDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SubOhmCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		304DB0991A07C17C0046CDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SubOhmCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		304DB09B1A07C17C0046CDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SubOhmCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubOhmCalc.app/Contents/MacOS/SubOhmCalc";
+			};
+			name = Debug;
+		};
+		304DB09C1A07C17C0046CDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SubOhmCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubOhmCalc.app/Contents/MacOS/SubOhmCalc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304DB0721A07C17C0046CDA9 /* Build configuration list for PBXProject "SubOhmCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304DB0951A07C17C0046CDA9 /* Debug */,
+				304DB0961A07C17C0046CDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304DB0971A07C17C0046CDA9 /* Build configuration list for PBXNativeTarget "SubOhmCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304DB0981A07C17C0046CDA9 /* Debug */,
+				304DB0991A07C17C0046CDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		304DB09A1A07C17C0046CDA9 /* Build configuration list for PBXNativeTarget "SubOhmCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304DB09B1A07C17C0046CDA9 /* Debug */,
+				304DB09C1A07C17C0046CDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304DB06F1A07C17C0046CDA9 /* Project object */;
+}
