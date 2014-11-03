@@ -2,7 +2,7 @@
 //  SubOhmCalcTests.m
 //  SubOhmCalcTests
 //
-//  Created by Fliegl on 03.11.14.
+//  Created by Johannes Dürr on 03.11.14.
 //  Copyright (c) 2014 Johannes Dürr. All rights reserved.
 //
 
