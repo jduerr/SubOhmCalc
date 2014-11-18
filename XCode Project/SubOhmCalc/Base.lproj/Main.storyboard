@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="e89-lY-r5k">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="e89-lY-r5k">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -950,8 +950,10 @@
                     <window key="window" title="Vape Tool - VV / VW " allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="D2h-VI-kXq">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="contentRect" x="294" y="362" width="480" height="319"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                        <value key="minSize" type="size" width="480" height="319"/>
+                        <value key="maxSize" type="size" width="480" height="319"/>
                     </window>
                     <connections>
                         <segue destination="Bnm-Md-9Gk" kind="relationship" relationship="window.shadowedContentViewController" id="yg6-NO-TR3"/>
@@ -966,11 +968,116 @@
             <objects>
                 <viewController id="Bnm-Md-9Gk" customClass="VV_VW_ViewController" sceneMemberID="viewController">
                     <view key="view" id="xBz-xg-d9L">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="319"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="vQz-J5-wNt">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="319"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-gc-5mH">
+                                        <rect key="frame" x="18" y="20" width="50" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Voltage" id="mQR-p0-7Ug">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNF-TI-nRc">
+                                        <rect key="frame" x="174" y="20" width="55" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wattage" id="MeN-Zb-2Gx">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-X4-YYn">
+                                        <rect key="frame" x="33" y="42" width="25" height="259"/>
+                                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="30" doubleValue="5.1428571428571432" tickMarkPosition="right" numberOfTickMarks="29" allowsTickMarkValuesOnly="YES" sliderType="linear" id="5vR-qE-qvJ"/>
+                                        <connections>
+                                            <action selector="voltageSliderDidChange:" target="Bnm-Md-9Gk" id="irN-tQ-oID"/>
+                                        </connections>
+                                    </slider>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NFT-6D-HM5">
+                                        <rect key="frame" x="86" y="20" width="72" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Resistance" id="Uwy-1P-C1v">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="SVq-El-Ysv">
+                                        <rect key="frame" x="360" y="20" width="100" height="100"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="vv_VW_100" id="DgC-Yo-5C7"/>
+                                    </imageView>
+                                    <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CgD-2v-v79">
+                                        <rect key="frame" x="112" y="42" width="25" height="259"/>
+                                        <sliderCell key="cell" alignment="left" maxValue="50" doubleValue="5" tickMarkPosition="right" numberOfTickMarks="51" allowsTickMarkValuesOnly="YES" sliderType="linear" id="h4E-13-MRD"/>
+                                        <connections>
+                                            <action selector="resistanceSliderDidChange:" target="Bnm-Md-9Gk" id="JPb-4U-3xP"/>
+                                        </connections>
+                                    </slider>
+                                    <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XXT-dD-pGf">
+                                        <rect key="frame" x="188" y="42" width="25" height="259"/>
+                                        <sliderCell key="cell" alignment="left" maxValue="100" doubleValue="1" tickMarkPosition="right" numberOfTickMarks="101" allowsTickMarkValuesOnly="YES" sliderType="linear" id="NiK-yp-kBK"/>
+                                        <connections>
+                                            <action selector="wattageSliderDidChange:" target="Bnm-Md-9Gk" id="IVC-nm-RQh"/>
+                                        </connections>
+                                    </slider>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Al7-wo-qmx">
+                                        <rect key="frame" x="254" y="190" width="189" height="54"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00.00 W" id="oLb-qI-42m">
+                                            <font key="font" size="45" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCb-Xm-qib">
+                                        <rect key="frame" x="254" y="128" width="189" height="54"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00.00 Ω" id="im4-O9-FRm">
+                                            <font key="font" size="45" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fx9-F0-F4C">
+                                        <rect key="frame" x="254" y="252" width="189" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="185" id="AXj-9W-rxp"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00.00 V" id="poS-z3-yUM">
+                                            <font key="font" size="45" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MNF-TI-nRc" firstAttribute="top" secondItem="XXT-dD-pGf" secondAttribute="bottom" constant="8" symbolic="YES" id="1ZM-ER-uFS"/>
+                                    <constraint firstAttribute="trailing" secondItem="SVq-El-Ysv" secondAttribute="trailing" constant="20" symbolic="YES" id="2Po-6O-trg"/>
+                                    <constraint firstItem="XXT-dD-pGf" firstAttribute="centerX" secondItem="MNF-TI-nRc" secondAttribute="centerX" id="6o2-4v-cGG"/>
+                                    <constraint firstItem="NFT-6D-HM5" firstAttribute="leading" secondItem="7xe-gc-5mH" secondAttribute="trailing" constant="22" id="7JW-Rc-AIH"/>
+                                    <constraint firstItem="MNF-TI-nRc" firstAttribute="leading" secondItem="NFT-6D-HM5" secondAttribute="trailing" constant="20" id="9Ma-jB-pQS"/>
+                                    <constraint firstItem="BCb-Xm-qib" firstAttribute="top" secondItem="Al7-wo-qmx" secondAttribute="bottom" constant="8" symbolic="YES" id="BpK-B8-mcD"/>
+                                    <constraint firstItem="Al7-wo-qmx" firstAttribute="leading" secondItem="Fx9-F0-F4C" secondAttribute="leading" id="CLn-zM-YBq"/>
+                                    <constraint firstItem="BCb-Xm-qib" firstAttribute="trailing" secondItem="Al7-wo-qmx" secondAttribute="trailing" id="I7Q-Oi-Vgc"/>
+                                    <constraint firstItem="XXT-dD-pGf" firstAttribute="top" secondItem="CgD-2v-v79" secondAttribute="top" id="ICM-et-KYd"/>
+                                    <constraint firstItem="SVq-El-Ysv" firstAttribute="top" secondItem="BCb-Xm-qib" secondAttribute="bottom" constant="8" symbolic="YES" id="K0o-Ik-nmV"/>
+                                    <constraint firstItem="7xe-gc-5mH" firstAttribute="top" secondItem="dbu-X4-YYn" secondAttribute="bottom" constant="8" symbolic="YES" id="LBA-B0-U3z"/>
+                                    <constraint firstItem="dbu-X4-YYn" firstAttribute="top" secondItem="vQz-J5-wNt" secondAttribute="top" constant="20" symbolic="YES" id="NsU-VI-Uia"/>
+                                    <constraint firstItem="7xe-gc-5mH" firstAttribute="leading" secondItem="vQz-J5-wNt" secondAttribute="leading" constant="20" symbolic="YES" id="OG2-hy-o7g"/>
+                                    <constraint firstItem="7xe-gc-5mH" firstAttribute="baseline" secondItem="NFT-6D-HM5" secondAttribute="baseline" id="OHX-6Y-WN3"/>
+                                    <constraint firstItem="MNF-TI-nRc" firstAttribute="bottom" secondItem="SVq-El-Ysv" secondAttribute="bottom" id="TT8-Pi-gzr"/>
+                                    <constraint firstItem="NFT-6D-HM5" firstAttribute="baseline" secondItem="MNF-TI-nRc" secondAttribute="baseline" id="WBq-bd-Idl"/>
+                                    <constraint firstItem="dbu-X4-YYn" firstAttribute="top" secondItem="CgD-2v-v79" secondAttribute="top" id="Xop-5t-N5j"/>
+                                    <constraint firstItem="Fx9-F0-F4C" firstAttribute="trailing" secondItem="Al7-wo-qmx" secondAttribute="trailing" id="Zc8-65-emT"/>
+                                    <constraint firstItem="NFT-6D-HM5" firstAttribute="top" secondItem="CgD-2v-v79" secondAttribute="bottom" constant="8" symbolic="YES" id="ccV-By-FvP"/>
+                                    <constraint firstItem="Al7-wo-qmx" firstAttribute="top" secondItem="Fx9-F0-F4C" secondAttribute="bottom" constant="8" symbolic="YES" id="gEU-zr-EfA"/>
+                                    <constraint firstItem="Al7-wo-qmx" firstAttribute="leading" secondItem="BCb-Xm-qib" secondAttribute="leading" id="kt4-l4-bvw"/>
+                                    <constraint firstItem="dbu-X4-YYn" firstAttribute="centerX" secondItem="7xe-gc-5mH" secondAttribute="centerX" constant="3.5" id="o4L-Rf-jvx"/>
+                                    <constraint firstItem="Fx9-F0-F4C" firstAttribute="leading" secondItem="XXT-dD-pGf" secondAttribute="trailing" constant="43" id="suP-0v-Oup"/>
+                                    <constraint firstAttribute="bottom" secondItem="7xe-gc-5mH" secondAttribute="bottom" constant="20" symbolic="YES" id="vue-hi-Ign"/>
+                                    <constraint firstItem="NFT-6D-HM5" firstAttribute="centerX" secondItem="CgD-2v-v79" secondAttribute="centerX" constant="-3.5" id="zT0-U1-6AS"/>
+                                </constraints>
                             </visualEffectView>
                         </subviews>
                         <constraints>
@@ -980,10 +1087,18 @@
                             <constraint firstItem="vQz-J5-wNt" firstAttribute="leading" secondItem="xBz-xg-d9L" secondAttribute="leading" id="hlw-ul-UsJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resistanceLabel" destination="BCb-Xm-qib" id="KmE-f5-qi3"/>
+                        <outlet property="resistanceSlider" destination="CgD-2v-v79" id="oWQ-ht-91o"/>
+                        <outlet property="voltageLabel" destination="Fx9-F0-F4C" id="c3G-hz-oj0"/>
+                        <outlet property="voltageSlider" destination="dbu-X4-YYn" id="phY-sS-dGU"/>
+                        <outlet property="wattageLabel" destination="Al7-wo-qmx" id="zt3-xb-Uw1"/>
+                        <outlet property="wattageSlider" destination="XXT-dD-pGf" id="qty-GC-oi3"/>
+                    </connections>
                 </viewController>
                 <customObject id="hrd-d1-hSo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="1381"/>
+            <point key="canvasLocation" x="1409" y="1405.5"/>
         </scene>
         <!--Liquid Calc View Controller-->
         <scene sceneID="Hfe-RT-vLK">
@@ -1314,8 +1429,8 @@
         <image name="vv_VW_100" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="PdP-wD-Htq"/>
         <segue reference="Ka7-fK-GPY"/>
         <segue reference="4PM-zG-SCt"/>
-        <segue reference="PdP-wD-Htq"/>
     </inferredMetricsTieBreakers>
 </document>
